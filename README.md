@@ -10,3 +10,9 @@ Tesla meanwhile, Musk's very own company, has seen tremendous growth over the pa
 
 ## Model:
 After preparing the necessary data to analyse sentiment within Mr. Musk's tweets, as well as retreiving the relevant stock market data, we began to work on our model. 
+Our original plan for creating the model was to simply run random forrest on the existing data, while possibly messing with the different available data a little in order to produce better correlations between the sentiment analysis and the actual change in stock price. We encountered a few problems with this method, especially when it came to processing the data in a way that random forrest can understand. 
+Eventually, we were able to process the data into an acceptable format, and from that cleaned data, random forrest was able to produce a high correlation with a low MSE value, indicating that the model was consistent in it's predicitons. 
+Rather than only trying to predict the change in Tesla stock price, we also simplified to model to only predict the direction in which the stock price moved. This method produced better results, as we could use positive and negative sentiment to predict positive or negative stock change, a much simpler method. 
+
+## Conclusions:
+Ultimately, we were not able to produce a model that was able to beat our benchmark, which was simply the average change in price over the entirety of the dataframe. If we had more time, it's possible we would change the timeframe to only include TESLA's meteoric rise in the past few years, as there were 7 or so years with relatively little change. 
